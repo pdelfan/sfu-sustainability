@@ -1,0 +1,908 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+@font-face {
+    font-family: 'CountachWeb';
+    src: url(../font/countach/Countach-Regular.otf);
+    font-weight: 400,
+}
+
+@font-face {
+    font-family: 'CountachWeb';
+    src: url(../font/countach/Countach-Bold.otf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'DIN Condensed';
+    src: url(../font/din_condensed/DIN\ Condensed\ Regular.otf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'DIN Condensed';
+    src: url(../font/din_condensed/DIN\ Condensed\ Light.otf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'DIN Pro';
+    src: url(../font/din_pro/DINPro-Medium-tr.otf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'DIN Pro';
+    src: url(../font/din_pro/DINPro-Light-tr.otf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'DIN Pro';
+    src: url(../font/din_pro/DINPro-Bold-tr.otf);
+    font-weight: 500;
+}
+
+
+
+body {
+    font-family: 'DIN Pro', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Button */
+
+.btn {
+    display: block;
+    cursor: pointer;
+}
+
+/*--------------------------------------------------------------
+  Landing (on home page)
+  --------------------------------------------------------------*/
+
+.banner.landing {
+    padding: 0;
+    height: auto;
+    align-items: center;
+}
+
+.banner.landing .bannerText {
+    position: absolute;
+    max-width: 1000px;
+}
+
+.banner.landing img {
+    height: 700px;
+    width: 100%;
+    object-fit: cover;
+    filter: grayscale(100%) brightness(70%);
+    /* filter: grayscale(20%) brightness(120%); */
+}
+
+.banner.landing h1 {
+    
+    font-family: 'CountachWeb', sans-serif;
+    font-weight: 500;
+    font-size: 7.5em;
+    color: white;
+    margin-bottom: 0;    
+    padding: 0;
+    text-align: left;
+}
+
+.banner.landing h3 {
+    font-family: 'DIN Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+    line-height: 30px;
+    color: white;
+    width: 60%;
+    margin-block-start: 0em;
+    text-align: left;
+}
+
+.banner.landing .btn {
+
+    display: block;
+    margin: 0em;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: 2px solid white;
+    color: white;
+    transition: 0.1s;
+    text-align: center;
+    cursor: pointer;
+}
+
+.banner.landing .btn:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Youtube */
+
+.centered.youtube {
+    width: 100%;
+    padding: 2em 0 1em 0;
+}
+
+.youtube {
+    padding-bottom: 56.25%;
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+.youtube iframe {
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 95%;
+    width: 100%;
+    position: absolute;
+    border: none;
+}
+
+/*
+  Header   
+*/
+
+.header img {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+
+/*--------------------------------------------------------------
+  Post
+  --------------------------------------------------------------*/
+
+.post {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 20px 0;
+    max-width: 750px;
+    margin: auto;
+}
+
+.post img {
+    width: 100%;
+}
+
+.post h1 {
+    font-family: 'CountachWeb', sans-serif;
+    align-self: center;
+    font-size: 5em;
+    font-weight: bold;
+    color: #cc0633;
+    margin: 0;
+}
+
+.post h2 {
+    font-family: 'DIN Condensed', sans-serif;
+    font-size: 1.5em;
+    color: #888;
+    line-height: 25px;
+}
+
+.post h3 {
+    color: #cc0633;
+    font-size: 1.8em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.post p {
+    font-family: sans-serif;
+    color: #46413d;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-top: 5px;
+}
+
+/*--------------------------------------------------------------
+  About
+  --------------------------------------------------------------*/
+
+.about.goals {
+    margin: 0;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin: 20px 0; */
+}
+
+.about h1 {
+    font-family: 'CountachWeb', sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    color: #ba2939;
+}
+
+.aboutList {
+    width: 80%;
+    max-width: 1000px;
+}
+
+.aboutList h1 {
+    font-family: 'DIN Pro';
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #ba2939;
+    text-align: center;
+    margin: auto;
+}
+
+.aboutList h2 {
+    font-family: 'DIN Pro';
+    font-weight: 400;
+    font-size: 0.6em;
+    color: #111;
+    line-height: 30px;
+    text-align: center;
+}
+
+.about ul {
+    padding: 0;
+    list-style: none;
+    color: rgb(153, 41, 44);
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+}
+
+.about li {
+    font-size: 2.1em;
+    position: relative;
+    margin: 0 0.5em;
+    max-width: 300px;
+}
+
+.aboutList.commitment {
+    width: 100%;
+}
+
+.aboutList.commitment h2 {
+    font-weight: 600;
+    font-size: 0.7em;
+    line-height: 15px;
+}
+
+.aboutList.commitment ul {
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.about.commitment h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.about.commitment li {
+    border: none;
+    font-size: 1.3em;
+    width: 200px;
+}
+
+.about.commitment li h1 {
+    border: none;
+    font-size: 2.2em;
+}
+
+.about.commitment li h2 {
+    opacity: 0.8;
+}
+
+.about li p {
+    font-size: 16px;
+    color: #000;
+    opacity: 0.6;
+}
+
+.aboutBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1000px;
+    gap: 6%;
+}
+
+.aboutBody h1 {
+    margin-top: 10px;
+}
+
+.aboutBody p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    font-weight: 300;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.aboutBody img {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    margin: auto;
+}
+
+/*--------------------------------------------------------------
+  Banner
+  --------------------------------------------------------------*/
+
+.grouped-banner {
+    display: flex;
+}
+
+.banner.program {
+    background-color: #111;
+    flex: 1;
+}
+
+.banner.program h1 {
+    color: #fff;
+}
+
+.banner.program .btn {
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.banner.program .btn:hover {
+    background-color: #fff;
+    color: black;
+}
+
+.banner.covid {
+    background-color: #ba2939;
+    flex: 1;
+}
+
+.banner.covid h1 {
+    color: #fff;
+}
+
+.banner.covid .btn {
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.banner.covid .btn:hover {
+    background-color: #fff;
+    color: black;
+}
+
+.banner.image, .banner.story {
+    padding: 0;
+    height: auto;
+}
+
+.banner.image .bannerText {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+}
+
+.banner.image.short .bannerText {
+    flex-direction: column;
+}
+
+.banner.image.short a {
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+}
+
+.banner.image img {
+    max-height: 500px;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(25%);
+}
+
+.banner.image.short img {
+    height: 350px;
+}
+
+.banner.image h1 {
+    color: white;
+    font-size: 3em;
+}
+
+.banner.image a {
+    font-size: 1.5em;
+    color: white;
+    padding: 0 2em 0 2em;
+    margin: auto;
+}
+
+.banner.image a:hover {
+    color: #aaa;
+}
+
+.banner.story .bannerText {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+.banner.story {
+    width: 100%;
+}
+
+.banner.story img {
+    max-height: 700px;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(30%);
+}
+
+.banner.story .bannerText {
+    padding: 20px
+}
+
+.banner.story h1 {
+    font-family: 'CountachWeb', sans-serif;
+    font-size: 5em;
+    color: white;
+}
+
+.banner.story h2 {
+    font-weight: 400;
+    color: white;
+}
+
+.banner {
+    background-color: #d6dadf;
+    display: flex;
+    padding: 50px;
+    align-items: center;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner h1 {
+    color: #000;
+    font-weight: 600;
+}
+
+.bannerText p {
+    font-size: 1.2em;
+    width: 60%;
+    margin: auto;
+}
+
+.bannerText h1 {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+
+.banner .btn {
+    margin: auto;
+    width: 130px;
+    margin-top: 30px;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 14px 20px 14px 20px;
+    transition: 0.1s ease-in-out;
+}
+
+
+/*--------------------------------------------------------------
+  Map
+  --------------------------------------------------------------*/
+
+#map {
+    width: 100%;
+    height: 600px;
+    background-color: grey;
+    filter: grayscale(100%);
+}
+
+/*--------------------------------------------------------------
+  Footer
+  --------------------------------------------------------------*/
+
+.footer {
+    padding: 30px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    background-color: #41454b;
+    justify-content: space-around;
+    justify-content: center;
+}
+
+.footer img {
+    max-width: 100px;
+}
+
+.footer div {
+    margin: 2%;
+}
+
+.footer h1 {
+    font-weight: 400;
+    font-size: 1em;
+    color: #fff;
+    display: flex;
+    margin-bottom: 1.1em;
+    margin-top: 5px;
+}
+
+.footer a {
+    display: flex;
+    flex-direction: column;
+    color: rgb(218, 218, 218);
+    font-size: 0.9em;
+    font-weight: 200;
+    padding: 7px 0;
+}
+
+.footer a:hover {
+    text-decoration: none;
+    color: rgb(158, 158, 158);
+    transition: 0.1s;
+}
+
+.footer .icons {
+    font-size: 1.6em;
+    color: white;
+    display: flex;
+    margin: 0;
+}
+
+.footer .icons a {
+    text-decoration: none;
+    margin-right: 20%;
+    text-align: left;
+}
+
+.footer .icons a:hover {
+    color: rgb(158, 158, 158);
+    transition: 0.1s;
+}
+
+/*--------------------------------------------------------------
+  Cards
+  --------------------------------------------------------------*/
+
+.main-area {
+    padding: 2em;
+}
+
+.card-content {
+    padding: 0.5em 0;
+}
+
+.card-content h2 {
+    font-family: 'DIN Condensed';
+    color: #be0309;
+    margin-top: 0;
+    margin-bottom: .5em;
+    font-weight: 400;
+    font-size: 1.6em;
+}
+
+.card-content p {
+    font-family: sans-serif;
+    font-weight: 300; 
+    color: #444;
+}
+
+.card-content .date {
+    font-family: 'DIN Pro';
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #000;
+}
+
+.centered.cards h1 {
+    font-family: 'CountachWeb', sans-serif;
+    font-weight: bold;
+    font-size: 3em;
+    color: #cc0633;
+    text-align: left;
+    margin-bottom: 0.2em;
+}
+
+.centered {
+    margin: auto;
+    padding: 0em 1em;
+}
+
+.centered h1 {
+    font-family: 'CountachWeb', sans-serif;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    color: #cc0633;
+}
+
+.seeMore {
+    max-width: 1500px;
+    padding: 0em 1em 3em 1em;
+    margin: auto;
+}
+
+.seeMore a {
+    font-size: 1.2em;
+    color: black;
+    /* text-decoration: underline; */
+}
+
+.seeMore a:hover {
+    color: #ba2939;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 52em) {
+    .centered {
+        max-width: 1000px;
+    }
+    .centered.cards {
+        max-width: 1500px;
+    }
+}
+
+.card {
+    margin-bottom: 2em;
+    /* border-top: 3px solid #be0309; */
+}
+
+.card:hover h2 {
+    color: #111;
+}
+
+.card a {
+    color: black;
+    text-decoration: none;
+}
+
+.cards img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+
+.card:hover img {
+    filter: grayscale(0%);
+    transition: 0.1s;
+}
+
+/*--------------------------------------------------------------
+  Flexbox card styles
+  --------------------------------------------------------------*/
+
+@media screen and (min-width: 40em) {
+    .cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .card {
+        margin-bottom: 1em;
+        display: flex;
+        flex: 0 1 calc(50% - 0.5em);
+    }
+}
+
+/* mq 40em*/
+
+@media screen and (min-width: 60em) {
+    .cards {
+        margin-top: inherit;
+    }
+    .card {
+        display: flex;
+        flex: 0 1 32%;
+    }
+    .card.article {
+        flex: 0 1 49%;
+    }
+    .card.research {
+        display: flex;
+        flex: 0 1 48%;
+    }
+}
+
+/* mq 60em*/
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 1024px) {
+
+    .banner.landing .bannerText {
+        padding-left: 1em;
+    }
+
+    banner.landing img {
+        height: 500px;
+    }
+    /* POST */
+    .post {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 70%;
+        margin: auto;
+    }
+    /* ABOUT */
+    .about {
+        height: auto;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about h1 {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .aboutBody {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 1000px;
+        gap: 10%;
+    }
+    .banner {
+        height: auto;
+        flex-direction: column;
+        padding: 50px;
+        justify-content: center;
+        text-align: center;
+    }
+    .bannerText p {
+        width: 70%;
+    }
+    .banner.story img {
+        height: 700px;
+    }
+    .col-0 {
+        flex: 1 0 80%;
+    }
+    .col-1, .col-2 {
+        flex: 1 0 20%;
+    }
+    .col-3, .col-4 {
+        flex: 1 0 20%;
+    }
+    .col-5 {
+        flex: 1 0 20%;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .banner.landing h1 {
+        font-size: 5em;
+    }
+
+    .banner.landing h3 {
+        font-size: 1.5em;
+    }
+
+    .banner.image .bannerText {
+        flex-direction: column;
+    }
+    .banner.image h1 {
+        font-size: 2.5em;
+    }
+    .banner.image a {
+        font-size: 1.5em;
+        color: white;
+        padding: 0.5em 0;
+    }
+    
+    .banner.story h1 {
+        font-size: 4em;
+    }
+
+    .banner.story h2 {
+        font-size: 1.3em;
+    }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    .banner.landing h3 {
+        width: 90%;
+    }
+    .banner.landing h1 {
+        font-size: 3.4em;
+    }
+
+    .banner.landing h3 {
+        font-size: 1.4em;
+    }
+
+    .about ul {
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0;
+    }
+    .aboutList li {
+        margin: auto;
+    }
+    banner.landing img {
+        height: 500px;
+    }
+
+    .bannerText h1 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* POST */
+    .post {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px 0 20px 0;
+        width: 90%;
+        margin: auto;
+    }
+    .post h1 {
+        font-size: 3.2em;
+    }
+    .post {
+        width: 90%;
+    }
+    .bannerText p {
+        width: 100%;
+    }
+    .banner.image img {
+        height: 500px;
+    }
+    .banner.story img {
+        height: 700px;
+    }
+    .banner.story h1 {
+        font-size: 3em;
+    }
+    .banner.story h2 {
+        font-size: 1.2em;
+    }
+    .banner.image .bannerText {
+        padding: 10px;
+    }
+    .grouped-banner {
+        flex-direction: column;
+    }
+    .col-0 {
+        flex: 1 0 70%;
+    }
+    .col-1, .col-2 {
+        flex: 1 0 40%;
+    }
+    .col-3, .col-4 {
+        flex: 1 0 40%;
+    }
+    .col-5 {
+        flex: 1 0 40%;
+    }
+}

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SFU Sustainability</title>
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/all.min.css">
+  <link rel="stylesheet" href="../css/bootstrap.css">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" />
+
+  <!-- Make sure you put this AFTER Leaflet's CSS -->
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+
+</head>
+
+<body>
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="../img/SFU_block_colour_rgb.png"
+          alt="">&nbsp&nbspSustainability</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="mission.html">Mission</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="research.html">Research</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Projects
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="./sfu-2025-sustainability-plan-spring-2020-report.html">2025 Sustainability
+                Plan</a>
+              <a class="dropdown-item"
+                href="./sfu-and-binners-project-pilot-waste-aduit-on-burnaby-campus.html">Binners' Project</a>
+              <a class="dropdown-item" href="./re-use-for-good-fall-2019-semester-in-review.html">Re-use for Good</a>
+              <!-- <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div> -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="stories.html">Stories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- LANDING PAGE -->
+  <div class="banner landing">
+    <img src="../img/landing4.png" alt="">
+
+    <div class="bannerText">
+      <h1>SUSTAINABILITY AT SFU</h1>
+      <h3>Simon Fraser University is an institutional leader in pursuing ecological, social and economic
+        sustainability through its operations, research, academics, campus and community engagement.</h3>
+      <a class="btn" href="./mission.html">Learn more</a>
+    </div>
+  </div>
+
+
+  <div class="about goals">
+    <h1>OUR COMMITMENTS
+    </h1>
+    <div class="aboutList">
+      <ul>
+        <li>
+          <h1>1</h1>
+          <h2>SFU is a safe, inclusive, diverse, equitable and healthy campus community.</h2>
+        </li>
+        <li>
+          <h1>2</h1>
+          <h2>SFU's academic programs, research, and operations recognize the bounds of our planet.</h2>
+        </li>
+        <li>
+          <h1>3</h1>
+          <h2>SFU's academic programs, research, and operations recognize the bounds of our planet.</h2>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="about">
+    <div class="aboutBody">
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis numquam molestiae eum ipsum aperiam,
+        expedita vero cupiditate, minima modi, consectetur harum quisquam culpa ipsam error iusto? Dicta inventore
+        cumque hic vel excepturi? Eos quos dolorum nemo ut. Aliquid, eum sit.</p>
+
+      <div class="centered youtube">
+        <div class="youtube">
+          <iframe width="1200" height="700" src="https://www.youtube.com/embed/nsrp2Qh6H8k">
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+  <div class="banner image">
+    <img src="../img/coronavirus.jpg" alt="">
+    <div class="bannerText">
+      <h1>Learn more about SFU's plans for the fall semester
+      </h1>
+      <a href="#">2020-21 Academic Calendar
+      </a>
+      <a href="#">Student Information</a>
+      <a href="#">Faculty & Staff Guidelines</a>
+    </div>
+  </div>
+
+  <!-- CARD LIST -->
+  <div class="centered cards">
+    <h1>NEWS AND EVENTS</h1>
+
+    <section class="cards">
+      <article class="card">
+        <a href="./climate-solutions-innovation-series-at-british-columbia.html">
+          <img src="../img/card7.png" alt="">
+          <div class="card-content">
+            <h2>Climate Solutions - Innovation Series at British Columbia
+            </h2>
+            <p>An opportunity to hear some of British Columbia’s most innovative minds discuss climate solutions in
+              response to COVID-19.
+            </p>
+
+            <p class="date">April 5, 2020</p>
+
+          </div>
+        </a>
+      </article>
+
+      <article class="card">
+        <a href="advice-from-students-post-secondary-in-the-age-of-covid-19.html">
+          <img src="../img/card1.png" alt="">
+          <div class="card-content">
+            <h2>Advice From Students: Post-Secondary in the Age of COVID-19</h2>
+            <p>Part of the Distant, Not Disengaged event series, hosted by SFU Public Square, CityHive and the SFU
+              Morris J. Wosk Centre for Dialogue.</p>
+
+            <p class="date">June 14, 2020</p>
+
+          </div>
+        </a>
+      </article>
+
+      <article class="card">
+        <a href="./we-are-hiring-climate-change-education-research-assistant.html">
+          <img src="../img/card3.png" alt="">
+          <div class="card-content">
+            <h2>We're Hiring: Climate Change Education Research Assistant</h2>
+            <p>We are seeking a Climate Change Education Research Assistant to support the development of climate
+              change curricular.</p>
+
+            <p class="date">July 3, 2020</p>
+
+          </div>
+        </a>
+      </article>
+
+    </section>
+  </div>
+
+
+  <div class="seeMore">
+    <a href="#">See more News → </a>
+  </div>
+
+
+  <!-- CARD LIST -->
+  <div class="centered cards">
+    <h1>PROJECTS</h1>
+    <section class="cards">
+
+      <article class="card">
+        <a href="./sfu-2025-sustainability-plan-spring-2020-report.html">
+          <img src="../img/card2.png" alt="">
+          <div class="card-content">
+            <h2>SFU 2025 Sustainability Plan: Spring 2020 Report</h2>
+            <p> Simon Fraser University has published a Spring 2020 report on the SFU 2025 Sustainability Plan</p>
+
+            <p class="date">March 25, 2020</p>
+
+          </div>
+        </a>
+      </article>
+
+      <article class="card">
+        <a href="./sfu-and-binners-project-pilot-waste-aduit-on-burnaby-campus.html">
+          <img src="../img/card5.png" alt="">
+          <div class="card-content">
+            <h2>SFU and Binners’ Project pilot waste audit on Burnaby campus
+            </h2>
+            <p>SFU’s Re-use for Good initiative partnered with Binners’ Project—a network of binners, also known as
+              waste-pickers—to conduct a waste audit that will reveal how the university community is discarding
+              single-use plastics and products (SUPPs).
+            </p>
+            <p class="date">April 2, 2020</p>
+
+          </div>
+        </a>
+      </article>
+
+      <article class="card">
+        <a href="./re-use-for-good-fall-2019-semester-in-review.html">
+          <img src="../img/card4.png" alt="">
+          <div class="card-content">
+            <h2>Re-use for Good: Fall 2019 semester in review</h2>
+            <p> In September 2019, SFU launched its Re-use for Good initiative aiming to reduce single-use plastics
+              and disposable products.</p>
+            <p class="date">July 11, 2020</p>
+
+          </div>
+        </a>
+      </article>
+
+    </section>
+  </div>
+
+
+  <div class="seeMore">
+    <a href="#">See more Projects → </a>
+  </div>
+
+
+  <!--BANNER AND FOOTER-->
+
+  <!-- <div class="banner image short">
+    <img src="../img/newsletter.jpg" alt="">
+    <div class="bannerText">
+      <h1>Subscribe to the SFU Sustainability newsletter
+      </h1>
+      <a href="#">Subscribe</a>
+    </div>
+  </div> -->
+
+
+
+
+
+  <div class="grouped-banner">
+
+    <div class="banner covid">
+      <div class="bannerText">
+        <h1>Learn how SFU researchers are tackling COVID-19
+        </h1>
+        <a class="btn" href="#">Read more</a>
+      </div>
+    </div>
+
+    <div class="banner program">
+      <div class="bannerText">
+        <h1>Explore SFU's sustainability-related programs
+        </h1>
+        <a class="btn" href="#">Explore</a>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <div id="map"></div>
+
+  <script src="../js/map.js">
+  </script>
+
+
+
+  <div class="footer">
+    <div class="col-0">
+      <a href="./index.html"><img src="../img/SFU_block_colour_rgb.png" alt=""></a>
+    </div>
+
+    <div class="col-1">
+      <h1>Sustainability</h1>
+      <a href="#">Projects</a>
+      <a href="#">Research</a>
+      <a href="#">Courses</a>
+      <a href="#">Stories</a>
+      <a href="#">About</a>
+    </div>
+
+    <div class="col-2">
+      <h1>Contact Us</h1>
+      <a href="http://www.sfu.ca/contact/burnaby.html">8888 University Drive
+        <br>Burnaby, B.C.<br> Canada V5A 1S6
+      </a>
+      <a href="#">Email</a>
+      <a href="#">LiveHelp</a>
+    </div>
+
+    <div class="col-3">
+      <h1>Resources</h1>
+      <a href="#">Safety & Risk</a>
+      <a href="#">SFU Maps & Directions</a>
+      <a href="#">SFU Admissions</a>
+      <a href="#">Road Report</a>
+      <a href="#">Give to SFU</a>
+      <a href="#">Emergency Information</a>
+    </div>
+
+    <div class="col-4">
+      <h1>Security & Brand</h1>
+      <a href="#">Privacy Statement</a>
+      <a href="#">Report Copyright Infringement</a>
+      <a href="#">Report Security Issue</a>
+      <a href="#">Trademark Notice</a>
+    </div>
+
+    <div class="col-5">
+      <h1>Connect With Us<h1>
+          <div class="icons">
+            <a href="https://www.facebook.com/SFUSustainabilityOffice/" class="fab fa-facebook-f"></a>
+            <a href="https://twitter.com/SFUsustain" class="fab fa-twitter"></a>
+            <a href="https://www.instagram.com/SFUsustain/" class="fab fa-instagram"></a>
+            <a href="http://www.linkedin.com/company/sfu-sustainability-office" class="fab fa-linkedin-in"></a>
+          </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
