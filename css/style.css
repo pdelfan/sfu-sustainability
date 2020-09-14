@@ -81,7 +81,6 @@ a {
     width: 100%;
     object-fit: cover;
     filter: grayscale(100%) brightness(70%);
-    /* filter: grayscale(20%) brightness(120%); */
 }
 
 .banner.landing h1 {
@@ -90,8 +89,9 @@ a {
     font-weight: 500;
     font-size: 7.5em;
     color: white;
-    margin-bottom: 0;    
-    padding: 0;
+    background-color: #cc0633;
+    margin-bottom: 0.1em;    
+    padding: 0.1em;
     text-align: left;
 }
 
@@ -226,7 +226,7 @@ a {
     font-family: 'CountachWeb', sans-serif;
     font-size: 3em;
     font-weight: bold;
-    color: #ba2939;
+    color: #cc0633;
 }
 
 .aboutList {
@@ -238,7 +238,7 @@ a {
     font-family: 'DIN Pro';
     font-size: 1.5em;
     font-weight: 400;
-    color: #ba2939;
+    color: #cc0633;
     text-align: center;
     margin: auto;
 }
@@ -369,7 +369,7 @@ a {
 }
 
 .banner.covid {
-    background-color: #ba2939;
+    background-color: #cc0633;
     flex: 1;
 }
 
@@ -479,8 +479,8 @@ a {
 }
 
 .banner h1 {
+    font-family: 'CountachWeb', sans-serif;
     color: #000;
-    font-weight: 600;
 }
 
 .bannerText p {
@@ -511,10 +511,41 @@ a {
   --------------------------------------------------------------*/
 
 #map {
+    display: flex;
     width: 100%;
-    height: 600px;
+    height: 400px;
     background-color: grey;
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */;
+    flex: 0 1 50%;
+
+}
+
+.campus {
+    display: flex;
+    flex: 0 1 50%;
+    padding: 0;
+}
+
+.campus h1 {
+    font-size: 2.5em;
+}
+
+.campus p {
+    margin-bottom: 1em;
+}
+
+.campus a {
+    color: #cc0633;
+}
+
+.campus a:hover {
+    color: #111;
+    transition: 300ms;
+}
+
+
+.banner.campus {
+    background: white;
 }
 
 /*--------------------------------------------------------------
@@ -651,7 +682,7 @@ a {
 }
 
 .seeMore a:hover {
-    color: #ba2939;
+    color: #cc0633;
     text-decoration: none;
 }
 
@@ -736,9 +767,6 @@ a {
         padding-left: 1em;
     }
 
-    banner.landing img {
-        height: 500px;
-    }
     /* POST */
     .post {
         display: flex;
@@ -781,6 +809,11 @@ a {
     .banner.story img {
         height: 700px;
     }
+
+    .campus {
+        flex-direction: column;
+    }
+
     .col-0 {
         flex: 1 0 80%;
     }
@@ -793,6 +826,7 @@ a {
     .col-5 {
         flex: 1 0 20%;
     }
+
 }
 
 @media only screen and (max-width: 950px) {

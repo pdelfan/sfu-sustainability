@@ -9,27 +9,9 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/all.min.css">
   <link rel="stylesheet" href="./css/bootstrap.css">
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-    crossorigin="anonymous"></script>
-
-
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
     integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
     crossorigin="" />
-
-  <!-- Make sure you put this AFTER Leaflet's CSS -->
-  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
-    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
-    crossorigin=""></script>
-
 </head>
 
 <body>
@@ -56,11 +38,13 @@
               Projects
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="./pages/sfu-2025-sustainability-plan-spring-2020-report.html">2025 Sustainability
+              <a class="dropdown-item" href="./pages/sfu-2025-sustainability-plan-spring-2020-report.html">2025
+                Sustainability
                 Plan</a>
               <a class="dropdown-item"
                 href="./pages/sfu-and-binners-project-pilot-waste-aduit-on-burnaby-campus.html">Binners' Project</a>
-              <a class="dropdown-item" href="./pages/re-use-for-good-fall-2019-semester-in-review.html">Re-use for Good</a>
+              <a class="dropdown-item" href="./pages/re-use-for-good-fall-2019-semester-in-review.html">Re-use for
+                Good</a>
               <!-- <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Something else here</a>
           </div> -->
@@ -257,21 +241,6 @@
   </div>
 
 
-  <!--BANNER AND FOOTER-->
-
-  <!-- <div class="banner image short">
-    <img src="../img/newsletter.jpg" alt="">
-    <div class="bannerText">
-      <h1>Subscribe to the SFU Sustainability newsletter
-      </h1>
-      <a href="#">Subscribe</a>
-    </div>
-  </div> -->
-
-
-
-
-
   <div class="grouped-banner">
 
     <div class="banner covid">
@@ -294,10 +263,16 @@
 
 
 
-  <div id="map"></div>
-
-  <script src="./js/map.js">
-  </script>
+  <div class="campus">
+    <div class="banner campus">
+      <div class="bannerText">
+        <h1>Getting to campus</h1>
+        <p>For bus/skytrain routes and schedules, visit the <a href="https://www.translink.ca">TransLink website</a>.</p>
+        <p>For information regarding campus roads, check the <a href="http://www.sfu.ca/security/sfuroadconditions/">SFU road report</a>.</p>
+      </div>
+    </div>
+    <div id="map"></div>
+  </div>
 
 
 
@@ -352,6 +327,25 @@
           </div>
     </div>
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+  integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+  crossorigin="anonymous"></script>
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+
+  <script src="https://cdn.protomaps.com/tangram-lite/0.0.5/tangram.min.js"></script>
+
+  <script src="./js/map.js"></script>
 
 </body>
 
